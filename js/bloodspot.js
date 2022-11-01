@@ -18,3 +18,4 @@ let score=0;
 //     startBtn.innerText='SCORE: '+score
 
 // })
+
