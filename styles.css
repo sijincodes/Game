@@ -79,10 +79,22 @@ margin-top: 100px;
     
 
 }
-/* .btn-class{
-    display: flex;
 
-} */
+.lives{
+    height: 50px;
+     width: 150px;
+    outline: none;
+     cursor: none;
+     border: 2px solid;
+    color: red;
+     font-size: 1.5rem;
+     background: transparent;
+margin-top: 50px;
+position:absolute; top:0; left:0;
+padding:20px;
+text-align: center;
+
+} 
 .bloodspot{
     position: absolute;
     height:150px;
