@@ -2,7 +2,7 @@
 let container = document.querySelector(".container");
 let containerHeight = container.offsetHeight;
 let containerWidth = container.offsetWidth;
-let lives = 4;
+let lives =5;
 
 let imgArray = [
   "/Images/cersei.png",
@@ -20,6 +20,7 @@ let offsetArr = [
 
 let startBtn = document.querySelector(".btn");
 let livesSpan = document.querySelector(".lives");
+// livesSpan.style.display='hidden'
 
 function initiateGame() {
   imgArray.forEach((elm) => {
@@ -39,10 +40,15 @@ function initiateGame() {
 
     container.appendChild(enemy);
   });
+
 }
 
 startBtn.addEventListener("click", () => {
   initiateGame();
-  startBtn.innerText = "SCORE: " + score;
+ 
+  livesSpan.style.display='block'
+  livesSpan.innerText = "Lives: " 
+ 
+ // startBtn.innerText = "SCORE: " + score;
   //livesSpan.innerText="Lives: "+lives;
 });

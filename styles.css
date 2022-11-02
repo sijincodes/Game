@@ -93,6 +93,7 @@ margin-top: 50px;
 position:absolute; top:0; left:0;
 padding:20px;
 text-align: center;
+display: none;
 
 } 
 .bloodspot{
@@ -109,10 +110,19 @@ text-align: center;
     /* border-radius: 180px; */
 
 }
-/* .enemy {
- 
+.lost{
     
-} */
+    color: red;
+     font-family: 'Montserrat', sans-serif; 
+    font-size: 5rem;
+    height: 250px;
+    width: 250px;
+    display: none;
+    background: transparent;
+    
+
+}
+
 @-webkit-keyframes mover {
     50% { transform: translateY(0); }
     100% { transform: translateY(-20px); }
@@ -121,3 +131,4 @@ text-align: center;
     10% { transform: translateY(0); }
     100% { transform: translateY(-20px); }
 }
+
