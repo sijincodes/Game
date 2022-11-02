@@ -20,6 +20,7 @@ let offsetArr = [
 
 let startBtn = document.querySelector(".btn");
 let livesSpan = document.querySelector(".lives");
+let myAudio = document.querySelector('#audio')
 // livesSpan.style.display='hidden'
 
 function initiateGame() {
@@ -44,6 +45,8 @@ function initiateGame() {
 }
 
 startBtn.addEventListener("click", () => {
+   
+myAudio.play()
   initiateGame();
  
   livesSpan.style.display='block'

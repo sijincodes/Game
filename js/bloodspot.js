@@ -35,7 +35,8 @@ window.addEventListener("click", (el) => {
  
  }
  else if(score ==6){
-    document.querySelector('.background').src='/Images/wonImage2.jpeg'
+   document.querySelector('.background').src='/Images/wonImage2.jpeg'
+   if(document.querySelector('.background').src='/Images/wonImage2.jpeg')
     alert("You won")
    // window.location.reload() 
 
