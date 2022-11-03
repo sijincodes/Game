@@ -47,6 +47,7 @@ function initiateGame() {
 startBtn.addEventListener("click", () => {
    
 myAudio.play()
+
   initiateGame();
  
   livesSpan.style.display='block'

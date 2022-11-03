@@ -123,6 +123,13 @@ display: none;
 
 
 }
+.cannon {
+    position: absolute;
+    transform-origin: 50% 50%;
+    width:50%;
+    height:50%;
+    bottom:0
+}
 
 @-webkit-keyframes mover {
     50% { transform: translateY(0); }
