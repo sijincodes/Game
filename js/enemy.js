@@ -1,4 +1,3 @@
-//let container = document.querySelector('.container')
 let container = document.querySelector(".container");
 let containerHeight = container.offsetHeight;
 let containerWidth = container.offsetWidth;
@@ -12,24 +11,18 @@ let imgArray = [
   "/Images/ramsey8.png",
   "/Images/tyrion1-img.png",
 ];
-let offsetArr = [
-  "/Images/little-finger.png",
-  "/Images/ramsey8.png",
-  "/Images/tyrion1-img.png",
-];
 
 let startBtn = document.querySelector(".btn");
 let livesSpan = document.querySelector(".lives");
-let myAudio = document.querySelector("#audio");
-// livesSpan.style.display='hidden'
+let scoreCard = document.querySelector(".score");
+let backgroundAudio = document.querySelector("#audio");
+
 
 function initiateGame() {
   imgArray.forEach((elm) => {
     let enemy = document.createElement("img");
     enemy.setAttribute("class", "enemy");
-
     enemy.setAttribute("src", elm);
-
     setInterval(() => {
       let randomTop = Math.random() * (containerHeight - 100);
       let randomLeft = Math.random() * (containerWidth - 250);
@@ -42,17 +35,14 @@ function initiateGame() {
     container.appendChild(enemy);
   });
 }
-
 startBtn.addEventListener("click", () => {
-  myAudio.play();
-
+  backgroundAudio.play();
   initiateGame();
-
+  startBtn.style.display = "none";
+  scoreCard.style.display = "block";
+  scoreCard.innerText = "Score: 0";
   livesSpan.style.display = "block";
   livesSpan.innerText = "Lives: ";
 
   initiateShooting();
-  // startBtn.innerText = "SCORE: " + score;
-  //livesSpan.innerText="Lives: "+lives;
-
 });
