@@ -10,15 +10,15 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script> -->
-    <audio
-      id="audio"
-      src="/Audio/Game of Thrones.mp3"
-    ></audio>
-    <audio
-    id="pistalAudio"
-    src="/Audio/shot-rifle-39-mm-37542.mp3"
-  ></audio>
+    <audio id="audio" src="/Audio/Game of Thrones.mp3"></audio>
+    <audio id="pistalAudio" src="/Audio/shot-rifle-39-mm-37542.mp3"></audio>
     <title>Villains of GOT</title>
   </head>
   <body>
@@ -39,14 +39,26 @@
         <span class="lives"></span>
       </div>
       <!-- </div> -->
-      <div>
-        <span class="lost"></span>
+      <div class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <div class="modal-content-heading-logo">
+            <h1 class="modal-content-heading">
+              Shoot the GOT Villains and Keep the Legacy
+            </h1>
+
+            <img src="/Images/logo.png" alt="logo" />
+          </div>
+        </div>
       </div>
+
+      <!-- till here  -->
     </div>
 
     <script src="/js/cursor.js"></script>
     <script src="/js/bloodspot.js"></script>
     <script src="/js/enemy.js"></script>
     <script src="/js/win-lose.js"></script>
+    <script src="/js/modals.js"></script>
   </body>
 </html>
