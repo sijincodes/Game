@@ -138,10 +138,10 @@ margin-top: 100px;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.8;
     padding: 3.5rem 1.5rem;
     width: 400px;
-    height: 150px;
+    height: 200px;
     border-radius: 25px;
     
 }
@@ -156,7 +156,7 @@ margin-top: 100px;
 
 .modal-content h1{
     color:#927B4F;
-    font-family:'Montserrat', sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     word-spacing: 2px;
     margin:0
 }

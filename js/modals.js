@@ -22,7 +22,8 @@ function toggleModalUpdate(isWin) {
 
   if (isWin) {
     modalContentUpdate.innerHTML = "You won.";
-  } else {modalContentUpdate.innerHTML = "You lost. Dont Cry :P";
+  } else {
+    modalContentUpdate.innerHTML = "You lost. Dont Cry :P";
   }
 
   toggleModal();
