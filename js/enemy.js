@@ -4,12 +4,12 @@ let containerWidth = container.offsetWidth;
 let lives = 5;
 
 let imgArray = [
-  "../Images/cersei.png",
-  "../Images/jaime10.png",
-  "../Images/joffery3.png",
-  "../Images/little-finger.png",
-  "../Images/ramsey8.png",
-  "../Images/tyrion1-img.png",
+  "./Images/cersei.png",
+  "./Images/jaime10.png",
+  "./Images/joffery3.png",
+  "./Images/little-finger.png",
+  "./Images/ramsey8.png",
+  "./Images/tyrion1-img.png",
 ];
 
 let startBtn = document.querySelector(".btn");

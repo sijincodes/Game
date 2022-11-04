@@ -15,7 +15,7 @@ function scoreKeeper() {
     livesSpan.style.display = "none";
     scoreCard.style.display = "none";
     scoreCard.innerText = "SCORE: " + score;
-    document.querySelector(".background").src = "../Images/wonImage2.jpeg";
+    document.querySelector(".background").src = "./Images/wonImage2.jpeg";
     toggleModalUpdate(true);
     setTimeout(() => {
       window.location.reload();
